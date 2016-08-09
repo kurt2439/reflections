@@ -1,4 +1,9 @@
 What happens when you initialize a repository? Why do you need to do it?
 You create a .git folder which stores metadata about your git repository.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area is a more precise file area where we can specify changes
+that we actually want in git. It is a temporary space between the cwd and repo.
+It allows us to see actually what we are committing. 
+
 

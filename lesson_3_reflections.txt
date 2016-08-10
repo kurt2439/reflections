@@ -22,3 +22,9 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 You could have a central server with a bare git repository and you would
 need to do all merge and compare features on the command line. Most things would
 be harder I think. They are great tools.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+I would do this when I want to keep my changes distinct from the known state of 
+master. Maybe I am adding a new feature or just don't want to get into a situation
+where I need to make a change to master to fix a high priority bug but find myself
+with a bunch of changes I need to hide first.

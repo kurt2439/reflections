@@ -12,3 +12,13 @@ Branches are different code lineages within a repository. Clones are copies of a
 repository and its commit history. Forks are clones of a repository which is
 managed by a central git server and refers to the original repository source
 making it easier to merge changes from your clone back to that source.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+If you want to work offline you can still compare your changes to the last
+known state of the remote. You can merge locally and push changes later when you are 
+online again.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+You could have a central server with a bare git repository and you would
+need to do all merge and compare features on the command line. Most things would
+be harder I think. They are great tools.

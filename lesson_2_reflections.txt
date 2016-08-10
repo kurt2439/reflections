@@ -6,4 +6,30 @@ The staging area is a more precise file area where we can specify changes
 that we actually want in git. It is a temporary space between the cwd and repo.
 It allows us to see actually what we are committing. 
 
+How can you use the staging area to make sure you have one commit per logical change?
+You can issue a git diff --staged to see the difference between the staging
+area and the last commit. Look through the differences between what is about to
+be commited and what was committed last should tell you whether the changes
+comprise one logical change or not.
 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+If you need to test some new features while keeping a working version of the code available. 
+Having different branches allows you to easily switch between known states and continue
+developing from those states without losing the work you had made on the same files
+while trying to implement something else.
+
+How do the diagrams help you visualize the branch structure?
+You can see where branches have diverged from other branches
+and at what point there have been merged back in.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The two branches have a merged history with all the commits of both branches available
+in git log and to be checked out. It is represented in the graph by timestamp and as two tracks
+so we can see what the relative timeframe was.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging can make some changes to a file appear to be common when you run into 
+merge conflicts just because it didn't have a conflict. So sometimes new code isn't that
+obvious. Always merging manually means you see all of the changes coming in from a 
+branch that potentially you didn't work on and don't fully understand. However this 
+consumes a lot of time. It is a trade-off. 
